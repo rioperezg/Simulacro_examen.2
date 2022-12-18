@@ -18,9 +18,11 @@ Salida: matriz de cadenas que tenían el prefijo del hashtag, pero que no contie
 """
 def Matriz_de_Hashtag(string):
     #Si cadena viene precedidda de un # Coger dicha cadena. Si elemento tiene la forma: #String return String, o por ej: tiene la forma 
-    #: #Str#ing, return [str, ing]
-    matriz = []
-    if string == ("#", string):
-        return(matriz.append(string))
-Cadena = "#hello" 
+    #: #Str#ing, return [str, ing] eliminar # y devolver string
+    while "#" in string:
+        lista = list(string)
+        lista.remove("#")        
+    return lista
+Cadena = "#hello#"
 print(Matriz_de_Hashtag(Cadena))
+

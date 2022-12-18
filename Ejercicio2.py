@@ -7,8 +7,7 @@ Problemas:
 Meta:
 • Tienes que devolver 'Puedo escribir números como 1, 2, 3'.
 """
-def Numero(string):
-    #Convertir cadena en int
+
     
     
        

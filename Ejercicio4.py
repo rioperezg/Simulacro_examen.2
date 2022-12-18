@@ -29,4 +29,4 @@ def luck_check(string):
             return True
         else:
             return False
-print(luck_check("813372"))
+print(luck_check("2130"))
