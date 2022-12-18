@@ -23,6 +23,6 @@ def Matriz_de_Hashtag(string):
         lista = list(string)
         lista.remove("#")        
     return lista
-Cadena = "#hello#"
+Cadena = "#hello"
 print(Matriz_de_Hashtag(Cadena))
 
