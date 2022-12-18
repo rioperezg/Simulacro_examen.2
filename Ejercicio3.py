@@ -25,3 +25,23 @@ Refactorice la función en una función de Fibonacci recursiva que, al usar una 
 datos memorizada, evita las deficiencias de la recursividad del árbol. ¿Puedes hacer que la
 memoria caché sea privada para esta función?
 """
+# El truco de la versión memorizada es que mantendremos una estructura de datos de caché
+# (probablemente una matriz asociativa) donde almacenaremos los números de Fibonacci a
+# medida que los calculamos. Cuando se calcula un número de Fibonacci, primero lo buscamos
+# en el caché, si no está allí, lo calculamos y lo ponemos en el caché, de lo contrario, devolvemos
+# el número almacenado en caché.
+def fibonacci(n):
+    # La serie de fibonacci empieza en 1 y es sumando el termino mas el anterior de forma recursiva como es la serie de fibonacci
+    # entonces: el primer termino es 1, el segundo es 2, y el tercero es 1 + 2, el cuarto es 3 + 2, el quinto es 5 + 3etc....
+    Terms_Suce = []
+    for i in range(n):
+        if i == 0:
+            Terms_Suce.append(1)
+        elif i == 1:
+            Terms_Suce.append(1)
+        else:
+            Terms_Suce.append(Terms_Suce[i - 1] + Terms_Suce[i - 2])
+    return Terms_Suce
+print(fibonacci(10))
+ 
+

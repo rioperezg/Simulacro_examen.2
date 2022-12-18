@@ -17,3 +17,16 @@ Girado en sentido contrario a las agujas del reloj se vería así:
  [2, 5, 8],
  [1, 4, 7]]
  """
+def rotacion(Matriz):
+    Matriz == Matriz[n, m]
+    # Conteplamos la longitud de las filas de la matriz
+    for i in len(Matriz):
+        for j in len(Matriz):
+            if i != j
+
+
+    return Matriz
+A = [[1, 2, 3],
+     [4, 5, 6],
+     [7, 8, 9]]
+print(A)

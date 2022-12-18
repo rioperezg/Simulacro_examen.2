@@ -14,12 +14,13 @@ representación decimal de cadena de un número de boleto de la suerte, o false/
 todos los demás números. Debería arrojar errores para cadenas vacías o cadenas que no
 representan un número decimal.
 """
-def luck_check(string):
+def luck_check(str):
     #Si la longitud de la cadena es par, sumar los dos primeros elementos de la cadena y los dos ultimos elementos de la cadena
     #Si la longitud de la cadena es impar, sumar los dos primeros elementos de la cadena y los dos ultimos elementos de la cadena
     #Si la suma de los dos primeros elementos de la cadena es igual a la suma de los dos ultimos elementos de la cadena, return True
     #Si la suma de los dos primeros elementos de la cadena no es igual a la suma de los dos ultimos elementos de la cadena, return False
-    if len(string) % 2 == 0:
+    if len(str) % 2 == 0:
+        string = list(str)
         if string[0] + string[1] == string[-2] + string[-1]:
             return True
         else:
@@ -29,4 +30,4 @@ def luck_check(string):
             return True
         else:
             return False
-print(luck_check("2130"))
+print(luck_check("563281"))

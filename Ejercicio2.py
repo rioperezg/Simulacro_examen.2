@@ -7,7 +7,9 @@ Problemas:
 Meta:
 • Tienes que devolver 'Puedo escribir números como 1, 2, 3'.
 """
-
+def Numeros(string):
+    #consiste esencialmente en convertir cadenas de numeros como: uno dos y tres en 1, 2, 3
+    #quizas podemos asigmar los puestos uno dos y tres con letras y declarar en que puesto se encuentran 
     
     
        
